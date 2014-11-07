@@ -1,0 +1,16 @@
+#summary Basic chart
+
+First, you should have a chart component on your form. If you don't have it, just copy a source code into your windows forms application and build it.
+
+Simple chart code:
+
+{{{
+chart1.xAxis.Categories = new string[] { "1", "2", "3" };
+chart1.Series = new Series[] 
+{
+   new cSeries() { Name = "Series1", Data = new string[] { "0,1", "", "" }, Type = cSeries.eType.Column },
+   new cSeries() { Name = "Series2", Data = new string[] { "1", "3", "2" }, Type = cSeries.eType.Area }
+}
+}}}
+
+Yep, thats all.
